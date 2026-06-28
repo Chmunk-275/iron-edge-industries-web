@@ -25,6 +25,35 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
+// Gallery auto-slider
+(function () {
+  const slides = document.querySelectorAll('.gallery-slide');
+  const dots   = document.querySelectorAll('.gallery-dot');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function advance() { goTo(current + 1); }
+
+  function start() { timer = setInterval(advance, 4500); }
+  function stop()  { clearInterval(timer); }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { stop(); goTo(i); start(); });
+  });
+
+  start();
+}());
+
 // Auto-highlight active nav link based on current page
 const page = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
