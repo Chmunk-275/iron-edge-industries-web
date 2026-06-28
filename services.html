@@ -13,7 +13,7 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <span class="logo-name"><img src="images/logo/iron-edge-logo-v2.png" alt="Iron Edge Industries"></span>
+        <span class="logo-name"><img src="images/logo/iron-edge-logo-v2.png" alt="Iron Edge Industries Logo" title="Iron Edge Industries"></span>
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -43,11 +43,10 @@
 
   <main>
 
-    <div class="page-hero">
+    <div class="page-hero" style="background: linear-gradient(180deg, rgba(12,14,18,0.72) 0%, rgba(17,18,20,0.88) 100%), url('images/gallery/ice-repair.jpeg') center / cover no-repeat;">
       <div class="page-hero-inner container">
         <span class="label">Services</span>
         <h1>What We Offer</h1>
-        <!--EDIT------------------------------------------------------------->
         <p>We offer a full range of repairs and services for your heavy equipment needs. </p>
       </div>
     </div>
@@ -61,75 +60,34 @@
           <div class="service-card">
             <div class="service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="8" width="18" height="8" rx="2"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="3" y1="12" x2="1" y2="12"/><line x1="23" y1="12" x2="21" y2="12"/>
+                <!-- cylinder head -->
+                <path d="M6 3h12"/>
+                <!-- cylinder walls -->
+                <line x1="6" y1="3" x2="6" y2="15"/>
+                <line x1="18" y1="3" x2="18" y2="15"/>
+                <!-- piston body -->
+                <rect x="8" y="6" width="8" height="5" rx="1"/>
+                <!-- piston ring -->
+                <line x1="8" y1="8.5" x2="16" y2="8.5"/>
+                <!-- connecting rod -->
+                <line x1="12" y1="11" x2="12" y2="17"/>
+                <!-- crankshaft journal -->
+                <circle cx="12" cy="19" r="2"/>
+                <!-- intake port -->
+                <line x1="1" y1="5" x2="6" y2="5"/>
+                <!-- exhaust port -->
+                <line x1="18" y1="5" x2="23" y2="5"/>
               </svg>
             </div>
-            <h3>Engine Repair &amp; Rebuild</h3>
-            <p>Expert diesel engine work from tune-ups to complete overhauls. Built to OEM spec and tested before returning to service.</p>
+            <h3>Engine Diagnostics &amp; Repair</h3>
+            <p>Expert diesel engine work from diagnostics to reliable rebuilds. Built to OEM spec and tested before returning to service.</p>
             <ul class="service-list">
-              <li>Engine diagnostics &amp; compression testing</li>
-              <li>Cylinder head rebuilds &amp; valve grinds</li>
-              <li>Complete engine overhauls &amp; major rebuilds</li>
+              <li>Engine diagnostics &amp; troubleshooting</li>
+              <li>Cylinder head rebuilds &amp; valve seating</li>
+              <li>Complete engine overhauls &amp; major repairs</li>
               <li>Injector service &amp; fuel system repair</li>
               <li>Turbocharger replacement &amp; service</li>
-              <li>Cooling system repairs &amp; thermostat replacement</li>
-            </ul>
-          </div>
-
-          <!-- Transmission -->
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><line x1="12" y1="9" x2="12" y2="3"/><line x1="9.17" y1="10.83" x2="5" y2="7"/><line x1="14.83" y1="10.83" x2="19" y2="7"/><line x1="14.83" y1="13.17" x2="19" y2="17"/><line x1="9.17" y1="13.17" x2="5" y2="17"/>
-              </svg>
-            </div>
-            <h3>Transmission Service</h3>
-            <p>Transmission rebuilds, repairs, and replacement for both manual and automatic heavy duty transmissions.</p>
-            <ul class="service-list">
-              <li>Automatic &amp; manual transmission rebuilds</li>
-              <li>Clutch replacement &amp; adjustment</li>
-              <li>Torque converter service</li>
-              <li>Transfer case repair</li>
-              <li>Shift linkage &amp; cable repair</li>
-              <li>Fluid &amp; filter service</li>
-            </ul>
-          </div>
-
-          <!-- Hydraulics -->
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/>
-              </svg>
-            </div>
-            <h3>Hydraulic Systems</h3>
-            <p>Complete hydraulic system service including pumps, motors, cylinders, valves, and custom hose fabrication.</p>
-            <ul class="service-list">
-              <li>Hydraulic pump &amp; motor rebuilds</li>
-              <li>Cylinder reseal &amp; rod repair</li>
-              <li>Custom hose fabrication &amp; fittings</li>
-              <li>Control valve service &amp; replacement</li>
-              <li>System leak diagnosis &amp; repair</li>
-              <li>Fluid analysis &amp; system flushing</li>
-            </ul>
-          </div>
-
-          <!-- Brakes -->
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
-              </svg>
-            </div>
-            <h3>Brake Systems</h3>
-            <p>Air and hydraulic brake service for trucks, trailers, and heavy equipment. Safety inspections and full repairs.</p>
-            <ul class="service-list">
-              <li>Air brake inspections &amp; certifications</li>
-              <li>S-cam &amp; disc brake service</li>
-              <li>Brake chamber &amp; slack adjuster replacement</li>
-              <li>Lining &amp; drum replacement</li>
-              <li>Hydraulic brake bleeding &amp; repair</li>
-              <li>ABS diagnostics &amp; sensor replacement</li>
+              <li>Cooling system repairs &amp; services </li>
             </ul>
           </div>
 
@@ -140,53 +98,61 @@
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
               </svg>
             </div>
-            <h3>Electrical &amp; Diagnostics</h3>
-            <p>Advanced diagnostic capability for modern heavy duty equipment — fault codes, wiring faults, and ECM-level issues.</p>
+            <h3>Electrical Diagnostics &amp; Repair</h3>
+            <p>Advanced diagnostic capability for modern heavy duty equipment — fault codes, wiring shorts, and ECM-level issues.</p>
             <ul class="service-list">
-              <li>Computer &amp; fault code diagnostics</li>
-              <li>ECM / TCM programming &amp; calibration</li>
+              <li>Fault codes &amp; computer diagnostics</li>
+              <li>ECM programming &amp; calibration</li>
               <li>Wiring harness repair &amp; replacement</li>
-              <li>Charging system &amp; alternator service</li>
-              <li>Starter motor repair &amp; replacement</li>
+              <li>Control module diagnostics &amp; repairs</li>
+              <li>Starter motor &amp; charging system repairs</li>
               <li>Sensor diagnosis &amp; replacement</li>
             </ul>
           </div>
 
-          <!-- Preventive Maintenance -->
+          <!-- Tuning -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- ECU chip body -->
+                <rect x="5" y="5" width="14" height="14" rx="2"/>
+                <!-- left pins -->
+                <line x1="2" y1="9" x2="5" y2="9"/>
+                <line x1="2" y1="12" x2="5" y2="12"/>
+                <line x1="2" y1="15" x2="5" y2="15"/>
+                <!-- right pins -->
+                <line x1="19" y1="9" x2="22" y2="9"/>
+                <line x1="19" y1="12" x2="22" y2="12"/>
+                <line x1="19" y1="15" x2="22" y2="15"/>
+                <!-- rising performance/tune curve -->
+                <path d="M7 17 Q9 13 12 13 Q15 13 17 7"/>
+              </svg>
+            </div>
+            <h3>Engine Tuning</h3>
+            <p>Complete engine, fuel system, and ECM level tuning.</p>
+            <ul class="service-list">
+              <li>ECM reprogramming &amp; calibration</li>
+              <li>Emissions system tuning &amp; repairs</li>
+              <li>Custom engine parameters &amp; calibrations</li>
+              <li>Engine part upgrades &amp; replacement</li>
+            </ul>
+          </div>
+
+          <!-- General -->
           <div class="service-card">
             <div class="service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
               </svg>
             </div>
-            <h3>Preventive Maintenance</h3>
-            <p>Scheduled PM services to catch small problems before they become expensive failures. Keep your fleet on the road.</p>
+            <h3>General Services &amp; Repairs</h3>
+            <p>.</p>
             <ul class="service-list">
-              <li>Engine oil &amp; filter service</li>
-              <li>Fuel, air &amp; hydraulic filter changes</li>
-              <li>Full machine inspections &amp; reports</li>
-              <li>Greasing &amp; lubrication service</li>
-              <li>Belt, hose &amp; accessory inspection</li>
-              <li>Fluid top-up &amp; coolant service</li>
-            </ul>
-          </div>
-
-          <!-- Welding -->
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m9 11-6 6v3h9l3-3"/><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"/><path d="M15 5 9 11"/><path d="m20 8 2-2"/><path d="m15 3 2 2"/>
-              </svg>
-            </div>
-            <h3>Welding &amp; Fabrication</h3>
-            <p>MIG and stick welding for structural repairs, custom fabrication, and component manufacture for heavy equipment.</p>
-            <ul class="service-list">
-              <li>Structural frame &amp; chassis welding</li>
-              <li>Crack detection &amp; crack repair</li>
-              <li>Custom bracket &amp; mount fabrication</li>
-              <li>Bucket, blade &amp; attachment repair</li>
-              <li>Guard &amp; skid plate fabrication</li>
-              <li>General steel fabrication</li>
+              <li>Oil &amp; filter changes</li>
+              <li>Cooling system flush &amp; refill</li>
+              <li>Brake chamber &amp; slack adjuster replacement</li>
+              <li>Brake linings &amp; drum/disk replacements</li>
+              <li>ABS diagnostics &amp; sensor replacement</li>
             </ul>
           </div>
 
@@ -197,7 +163,7 @@
                 <rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
               </svg>
             </div>
-            <h3>Mobile Field Service</h3>
+            <h3>Mobile Repairs</h3>
             <p>When the equipment can't come to us, we come to it. Fully equipped service truck for on-site repairs across the region.</p>
             <ul class="service-list">
               <li>On-site breakdowns &amp; emergency repairs</li>
@@ -205,9 +171,30 @@
               <li>Mobile welding &amp; cutting</li>
               <li>On-location diagnostics</li>
               <li>Fluid top-up &amp; minor servicing</li>
-              <li>Covering Peace River &amp; surrounding areas</li>
             </ul>
           </div>
+
+          <!-- CVIP -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <h3>CVIP Facility</h3>
+            <p>Licensed CVIP inspection facility for commercial vehicles operating in Alberta. We perform mandatory annual safety inspections to NSC standards and issue official inspection reports.</p>
+            <ul class="service-list">
+              <li>Full safety inspection per NSC standards</li>
+              <li>Brake system testing &amp; measurement</li>
+              <li>Steering, suspension &amp; frame inspection</li>
+              <li>Lights, signals &amp; safety equipment check</li>
+              <li>Tires, wheels, rims &amp; coupling inspection</li>
+              <li>Official CVIP inspection report issued</li>
+            </ul>
+          </div>
+
+      
 
         </div>
 
@@ -217,10 +204,10 @@
     <div class="cta-band">
       <div class="container">
         <span class="label">Not Sure What You Need?</span>
-        <h2 class="section-title">Just Call — We'll Figure It Out</h2>
+        <h2 class="section-title">Give us a call</h2>
         <p class="section-desc">Describe the issue and we'll tell you what it'll take to fix it. No obligation, no runaround.</p>
         <div class="cta-actions">
-          <a href="tel:+1XXXXXXXXXX" class="btn btn-amber">
+          <a href="tel:+15873431507" class="btn btn-amber">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 11.5 19.79 19.79 0 0 1 1.61 2.84 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.57a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
             Call for a Quote
           </a>
@@ -230,7 +217,6 @@
     </div>
 
   </main>
-  <!--EDIT---------------------------------------------------------->
 
   <footer>
     <div class="footer-map">
@@ -243,7 +229,7 @@
     </div>
     <div class="footer-main">
       <div class="footer-brand">
-        <span class="f-logo-name"><img src="images/logo/iron-edge-logo-v2.png" alt="Iron Edge Industries"></span>
+        <span class="f-logo-name"><img src="images/logo/iron-edge-logo-v2.png" alt="Iron Edge Industries Logo" title="Iron Edge Industries"></span>
         <p>Heavy duty mechanic services for the Peace Region. Built on reliability and customer satisfaction.</p>
       </div>
       <div class="footer-col">
